@@ -414,8 +414,7 @@
       color: var(--charcoal);
       margin-bottom: 28px;
       opacity: 0;
-      transform: translateY(30px);
-      animation: heroFadeUp 0.8s 0.35s ease forwards;
+      animation: heroFadeIn 0.8s 0.35s ease forwards;
     }
 
     .hero-headline em {
@@ -628,6 +627,12 @@
       to {
         opacity: 1;
         transform: translateY(0);
+      }
+    }
+
+    @keyframes heroFadeIn {
+      to {
+        opacity: 1;
       }
     }
 
@@ -2923,7 +2928,12 @@
       }
 
       .hero-float-tag {
-        display: none;
+        top: 16px;
+        right: 16px;
+        bottom: auto;
+        padding: 12px 16px;
+        opacity: 1;
+        animation: none;
       }
 
       .section {
