@@ -2554,6 +2554,10 @@
     /* ============================================================
        EDITORIAL / FEATURES SECTION
        ============================================================ */
+    .features-section {
+      padding: 0 40px 96px;
+    }
+
     .features-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -2963,6 +2967,15 @@
       .footer-grid {
         grid-template-columns: 1fr 1fr;
       }
+
+      .features-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        margin-top: 48px;
+      }
+
+      .feature-card {
+        padding: 32px 28px;
+      }
     }
 
     @media (max-width: 768px) {
@@ -3027,6 +3040,19 @@
     }
 
     @media (max-width: 480px) {
+      .features-section {
+        padding: 0 20px 64px;
+      }
+
+      .features-grid {
+        grid-template-columns: minmax(0, 1fr);
+        margin-top: 36px;
+      }
+
+      .feature-card {
+        padding: 28px 24px;
+      }
+
       .hero-image-col {
         height: auto;
         aspect-ratio: 2 / 3;
@@ -3347,7 +3373,7 @@
   <!-- ============================================================
      FEATURES STRIP
      ============================================================ -->
-  <section aria-label="Store features" style="padding: 0 40px 96px; max-width: 1440px; margin: 0 auto;">
+  <section class="features-section" aria-label="Store features" style="max-width: 1440px; margin: 0 auto;">
     <div class="features-grid">
       <div class="feature-card fade-in-up">
         <div class="feature-icon">
